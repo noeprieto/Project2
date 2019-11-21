@@ -1,0 +1,42 @@
+.grid {
+  display:grid;
+  background-color:MediumSeaGreen;
+  height: 100vh;
+  width: 100vw;
+  grid-gap: 10px;
+  grid-template-columns: repeat (12, 1fr);
+  grid-template-rows: 150px 150px auto;
+  grid-template-areas:
+	"a a a a a a a a a a a a"
+	"b b b b b b b b b b b b"
+	". . . . c c c c . . . ."
+}
+.a{
+	grid-area: a;
+text-align:center;
+font-size:125px;
+}
+.b{ grid-area: b;
+}
+
+.c{
+	grid-area: c;
+	align-item: center;
+}
+
+.box {
+  background-color: lightblue;
+  color:black;
+  border-radius: 5px;
+  border: 1px black solid;
+}
+img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.title{
+	font-size:15px;
+	font-family:Comic sans;
+	color:black;
+}
